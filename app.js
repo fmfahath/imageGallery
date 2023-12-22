@@ -6,6 +6,7 @@ const nextBtnEl = document.getElementById('nextBtn');
 scrollContEl.addEventListener('wheel', (e) => {
     e.preventDefault();
     scrollContEl.scrollLeft += e.deltaY;
+    scrollContEl.style.scrollBehavior = 'auto';
 });
 
 //back button
