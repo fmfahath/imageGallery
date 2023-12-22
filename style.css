@@ -54,11 +54,11 @@ body{
 #backBtn, #nextBtn{
     width: 50px;
     margin: 40px;
+    cursor: pointer;
 }
 
 .gallery div img:hover{
     filter: grayscale(0%);
     cursor: pointer;
     transform: scale(1.1);
-
 }

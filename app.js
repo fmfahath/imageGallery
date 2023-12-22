@@ -8,3 +8,16 @@ scrollContEl.addEventListener('wheel', (e) => {
     scrollContEl.scrollLeft += e.deltaY;
 });
 
+//back button
+backBtnEl.addEventListener('click', () => {
+    // console.log('back btn clicked');
+    scrollContEl.style.scrollBehavior = 'smooth';
+    scrollContEl.scrollLeft -= 900;
+});
+
+//next button
+nextBtnEl.addEventListener('click', () => {
+    // console.log('nxt btn clicked');
+    scrollContEl.style.scrollBehavior = 'smooth';
+    scrollContEl.scrollLeft += 900;
+});
