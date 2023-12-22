@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body{
@@ -10,17 +9,13 @@ body{
 }
 
 .container{
-    width: 80%;
-    margin: 10% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
 }
 
-#div1{
-    background-color: aquamarine;
-}
-
-#div2{
-    background-color:antiquewhite;
-}
 .gallery{
     width: 100%;
     display: flex;
@@ -33,6 +28,8 @@ body{
     grid-gap: 20px;
     padding: 10px;
     flex: none;
+    width: 900px;
+    height: 300px;
 }
 
 .gallery div img{
@@ -50,6 +47,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 10% auto;
+    width: 70%;
 }
 #backBtn, #nextBtn{
     width: 50px;
